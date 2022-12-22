@@ -2,7 +2,7 @@
 
 Tenzies Dice game project made with Reactjs [Tenzies game website](https://tenzies-best-game.netlify.app/).
 
-<img src="https://user-images.githubusercontent.com/74247437/208322772-7f59abfd-7336-48e2-bd32-bc6d29e5b02b.png" width="100%">
+<img src="https://user-images.githubusercontent.com/74247437/209131453-7f9e89e2-7787-4ee7-9720-ed5a93029baa.png" width=100%>
 
 <br />
 <br />
