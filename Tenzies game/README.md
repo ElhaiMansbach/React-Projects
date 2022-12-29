@@ -1,6 +1,7 @@
 # Tenzies Game
 
-Tenzies Dice game project made with Reactjs [Tenzies game website](https://tenzies-best-game.netlify.app/).
+Tenzies Dice game project made with Reactjs.<br />
+Click here: [Tenzies game website](https://tenzies-best-game.netlify.app/).
 
 <img src="https://user-images.githubusercontent.com/74247437/209131453-7f9e89e2-7787-4ee7-9720-ed5a93029baa.png" width=100%>
 
