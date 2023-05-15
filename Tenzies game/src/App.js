@@ -6,8 +6,8 @@ import style from "./style.css";
 
 export default function App() {
   const [dice, setDice] = React.useState(allNewDice());
-  const [tenzies, setTenzies] = React.useState(false);
   const [rolls, setRolls] = React.useState(0);
+  const [tenzies, setTenzies] = React.useState(false);
 
   React.useEffect(() => {
     const allHeld = dice.every((die) => die.isHeld);
