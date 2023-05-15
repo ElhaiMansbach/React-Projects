@@ -4,7 +4,9 @@
 
 body {
     margin: 0;
-    background-color: #0B2434;
+    background: url("https://media2.giphy.com/media/U3qYN8S0j3bpK/giphy.webp?cid=ecf05e47ma7moxpu7e0hbp075vhvv72y1wvejobasklwzhb8&rid=giphy.webp&ct=g");
+    /* background: url("https://media3.giphy.com/media/ZnKdSM5piRLDW/giphy.webp?cid=ecf05e47xe75ak3zc93jy08xktyyqsd1objwe4zmvh4afvgp&rid=giphy.webp&ct=g"); */
+    /* background-color: #0B2434; */
     padding: 20px;
     font-family: 'Karla', sans-serif;
     display: grid;
@@ -15,16 +17,20 @@ body {
 }
 
 main {
-    background-color: #F5F5F5;
+    background: url("https://images.pexels.com/photos/168438/pexels-photo-168438.jpeg?auto=compress&cs=tinysrgb&w=1600");
     height: 400px;
     max-width: 800px;
     border-radius: 20px;
-    padding: 20px;
+    width: 100%;
+    margin: auto;
+    /* padding: 5%; */
+    padding: 20px 65px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
+
 
 .title {
     font-size: 40px;
@@ -36,6 +42,7 @@ main {
     font-weight: 400;
     margin-top: 0;
     text-align: center;
+    color: #F2F2F2;
 }
 
 .dice-container {
@@ -79,4 +86,3 @@ main {
 .roll-dice:active {
     box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
-

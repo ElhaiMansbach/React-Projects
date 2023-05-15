@@ -67,12 +67,12 @@ export default function App() {
   ));
 
   return (
-    <main>
+    <main style={style}>
       {tenzies && <Confetti />}
       <h1 className="title">Tenzies</h1>
       <p className="instructions">
-        Roll until all dice are the same. Click each die to freeze it at its
-        current value between rolls.
+        Roll until all dice are the same. <br/>
+        Click each die to freeze it at its current value between rolls.
       </p>
       <div className="dice-container">{diceElements}</div>
       <div>
