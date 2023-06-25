@@ -1,6 +1,6 @@
 # BuyFood App
 
-Click here for a live demo of the BuyFood app: [BuyFood App]((https://experience-ordering-food.netlify.app/)).
+Click here for a live demo of the BuyFood app: [BuyFood App](https://experience-ordering-food.netlify.app/).
 
 ## Description
 
