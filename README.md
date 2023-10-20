@@ -13,13 +13,13 @@ Here's a list of the projects included in this repository:
 
 2. **Project 2: Shows annual expenses**
    - Description: This is a simple Expense Tracker application that allows users to add and track their expenses.
-   - Technologies Used: JavaScript, React.
+   - Technologies Used: JavaScript, React, CSS.
    - Link to Project: [View Project](https://github.com/ElhaiMansbach/React-Projects/tree/main/Shows%20annual%20expenses)
 
-3. **Project 3: Project Name**
-   - Description: Briefly describe the project and its purpose.
-   - Technologies Used: List the technologies used (e.g., HTML, CSS, JavaScript).
-   - [Link to Project](project3/)
+3. **Project 3: Tenzies game**
+   - Description: Tenzies is a dice game That the objective of the game is to roll the dice until all of them show the same value. 
+   - Technologies Used: JavaScript, React, CSS.
+   - Link to Project: [View Project](https://github.com/ElhaiMansbach/React-Projects/tree/main/Tenzies%20game)
 
 Thank you for visiting my web development projects repository! Enjoy exploring the projects.
 
