@@ -29,5 +29,5 @@ Here's a list of the projects included in this repository:
 Thank you for visiting my web development projects repository! Enjoy exploring the projects.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74247437/207982883-97aacfb1-a7be-4ae6-8977-898f06d3acf8.png" alt="Twitter Header Photo" width="1000" height="200">
+  <img src="https://user-images.githubusercontent.com/74247437/207982883-97aacfb1-a7be-4ae6-8977-898f06d3acf8.png" alt="Twitter Header Photo" width="50%" height="50%">
 </p>
