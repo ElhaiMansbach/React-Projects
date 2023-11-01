@@ -4,7 +4,6 @@ async function getUserRepos(userName) {
       `https://api.github.com/users/${userName}/repos`
     );
     const userRepos = await response.json();
-    console.log(userRepos);
     return userRepos;
   } catch (error) {
     console.log(error);
