@@ -27,6 +27,12 @@ const gifSrc = [
   "https://media1.giphy.com/media/i1JSXl0MfeRd6/200.webp?cid=ecf05e4753aoj230ixy5osghuhayd775hq3k8jve2iv1uz1s&ep=v1_gifs_search&rid=200.webp&ct=g",
   "https://media2.giphy.com/media/h9oAf3IWCOZgs/200w.webp?cid=ecf05e47yeya9bqion5a8ml7c39myfsrats92p8jtatpg5cx&ep=v1_gifs_search&rid=200w.webp&ct=g",
   "https://media0.giphy.com/media/EVbEdEW3kuu0o/200w.webp?cid=ecf05e47kkdm2il72h17wkc9ht0i385bcm8prqehj7hy5vae&ep=v1_gifs_search&rid=200w.webp&ct=g",
+  "https://media2.giphy.com/media/3oEjIagF6qtZRvQdP2/200w.webp?cid=ecf05e47e519myfe7m9z0bjewx16eab5uuzqpjifeuy66x8c&ep=v1_gifs_search&rid=200w.webp&ct=g",
+  "https://media2.giphy.com/media/403NRxgdScOUQjiQEh/200w.webp?cid=ecf05e47e519myfe7m9z0bjewx16eab5uuzqpjifeuy66x8c&ep=v1_gifs_search&rid=200w.webp&ct=g",
+  "https://media2.giphy.com/media/7Hmw6SR4rCD0kE7lws/200w.webp?cid=ecf05e47lqzckdzzyafjm26s779bppzxp9b0it6bjqkg3hmp&ep=v1_gifs_search&rid=200w.webp&ct=g",
+  "https://media0.giphy.com/media/VQET4YLVUYuu4/100.webp?cid=ecf05e47lvd42gxjg0mtr60o3jlixcwuiqewdqd6x7wffsw4&ep=v1_gifs_search&rid=100.webp&ct=g",
+  "https://media0.giphy.com/media/l4q8f4miusB2zWEgw/200.webp?cid=ecf05e47jek1qm8exab3n7krvqlzlm3cmn5symjf9rkkef88&ep=v1_gifs_search&rid=200.webp&ct=g",
+  "https://media2.giphy.com/media/9NLYiOUxnKAJLIycEv/200.webp?cid=ecf05e47jek1qm8exab3n7krvqlzlm3cmn5symjf9rkkef88&ep=v1_gifs_search&rid=200.webp&ct=g",
 ];
 
 export default gifSrc;
