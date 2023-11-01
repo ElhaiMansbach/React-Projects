@@ -72,7 +72,6 @@ function Input() {
           <List userRepos={userRepos} />
         </>
       )}
-      {/* {userRepos && !error && <List userRepos={userRepos} />} */}
 
       {error && (
         <Typography

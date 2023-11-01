@@ -10,13 +10,25 @@ function Container() {
         style={{
           margin: "20px",
           fontWeight: "bold",
-          color: "#000000",
+          color: "white",
           textAlign: "center",
+          justifyContent: "center",
+          fontSize: "40px",
         }}
       >
         GitHub User History
       </Typography>
       <Input />
+      <img
+        src={process.env.PUBLIC_URL + "/github_icon.png"}
+        alt="GitHub Icon"
+        style={{
+          width: "50px",
+          position: "absolute",
+          right: "0px",
+          bottom: "0px",
+        }}
+      />
     </div>
   );
 }
