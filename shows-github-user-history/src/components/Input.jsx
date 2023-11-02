@@ -41,7 +41,7 @@ function Input() {
     if (userRepos) {
       const timer = setTimeout(() => {
         setShowLoading(true);
-      }, 4300);
+      }, 4000);
 
       return () => clearTimeout(timer);
     }
