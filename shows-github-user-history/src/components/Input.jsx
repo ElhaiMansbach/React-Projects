@@ -1,25 +1,28 @@
-import React from "react";
-import { useState } from "react";
-import List from "./List";
+import React, { useState, useEffect } from "react";
+import Table from "./Table";
 import Info from "./Info";
+import Progress from "./Progress";
 import { TextField, Button, Typography } from "@material-ui/core";
 import getUserInfo from "../services/getUserInfo";
 import getUserRepos from "../services/getUserRepos";
 import gifSrc from "../gif/Gifs.js";
+import "../css/Input.css";
 
 function Input() {
   const [userInfo, setUserInfo] = useState();
   const [userRepos, setUserRepos] = useState();
   const [error, setError] = useState(null);
   const [src, setSrc] = useState("");
+  const [showLoading, setShowLoading] = useState(false);
 
   async function handleSubmit(event) {
     event.preventDefault();
     setError(null);
-    setSrc(gifSrc[Math.floor(Math.random() * gifSrc.length)])
+    setSrc(gifSrc[Math.floor(Math.random() * gifSrc.length)]);
     const username = event.target.elements[0].value;
 
     try {
+      setShowLoading(false);
       const userData = await getUserInfo(username);
       if (userData.message === "Not Found") {
         setError(`User "${username}" not found 😵 - please try again.`);
@@ -33,6 +36,16 @@ function Input() {
       setError("An error occurred while fetching user data.");
     }
   }
+
+  useEffect(() => {
+    if (userRepos) {
+      const timer = setTimeout(() => {
+        setShowLoading(true);
+      }, 4300);
+
+      return () => clearTimeout(timer);
+    }
+  }, [userRepos]);
 
   return (
     <>
@@ -50,46 +63,62 @@ function Input() {
           variant="outlined"
           style={{ width: "300px", marginRight: "20px" }}
           error={Boolean(error)}
-          // helperText={error}
         />
 
         <Button
           type="submit"
           variant="contained"
           style={{
-            position: "absolut",
             backgroundColor: "#000000",
             color: "#ffffff",
+            fontFamily: "Alef",
           }}
         >
           Search
         </Button>
       </form>
 
-      {userRepos && !error && (
+      {userRepos && !error && showLoading && (
         <>
           <Info userInfo={userInfo} roposNum={userRepos.length} />
-          <List userRepos={userRepos} />
+          <Table userRepos={userRepos} />
         </>
       )}
 
+      {userRepos && !error && !showLoading && <Progress />}
+
       {error && (
-        <Typography
-          variant="body2"
-          color="error"
-          style={{ marginTop: "20px", fontSize: "22px", textAlign: "center" }}
+        <div
+          style={{
+            marginTop: "40px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
         >
-          {error}
-        </Typography>
-      )}
-      {error && (
-        <div style={{ marginTop: "70px"}}>
+          <Typography
+            variant="body2"
+            color="error"
+            style={{
+              fontSize: "22px",
+              textAlign: "center",
+              fontFamily: "Alef",
+            }}
+          >
+            {error}
+          </Typography>
+
           <img
+            className="rotate-vertical"
             src={src}
-            alt="GIF Image"
-            width="250"
-            height="250"
-            style={{ borderRadius: "50%" }}
+            alt="GIF"
+            style={{
+              width: "270px",
+              height: "250px",
+              marginTop: "50px",
+              borderRadius: "50%",
+            }}
           />
         </div>
       )}
