@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
+import "../css/Info.css";
 
 function Info(props) {
   return (
@@ -12,21 +13,21 @@ function Info(props) {
         marginTop: "25px",
       }}
     >
-      <Typography style={{ fontSize: "30px", fontWeight: "bold" }}>
+      <Typography style={{ fontFamily: "Alef", fontSize: "30px", fontWeight: "bold" }}>
         Hello you👋{" "}
       </Typography>
 
-      <div>
-        <img
-          src={props.userInfo.avatar_url}
-          width="100px"
-          style={{ position: "absolute", left: "10px", top: "8px", zIndex: "-1", borderRadius: "50%" }}
-        />
-        <Typography style={{ fontSize: "22px" }}>
-          The user <strong>{props.userInfo.name}</strong> has {props.roposNum}{" "}
-          public repositories.
-        </Typography>
-      </div>
+      <Typography style={{ fontFamily: "Alef",fontSize: "22px" }}>
+        The user <strong>{props.userInfo.name}</strong> has {props.roposNum}{" "}
+        public repositories.
+      </Typography>
+      <img
+        className="rotate"
+        alt="avatar"
+        src={props.userInfo.avatar_url}
+        width="120px"
+        style={{ marginTop: "20px", borderRadius: "50%" }}
+      />
     </div>
   );
 }

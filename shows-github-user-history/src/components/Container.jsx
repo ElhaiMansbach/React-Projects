@@ -5,28 +5,45 @@ import { Typography } from "@material-ui/core";
 function Container() {
   return (
     <div>
-      <Typography
-        variant="h4"
+      <div
         style={{
-          margin: "20px",
-          fontWeight: "bold",
-          color: "white",
-          textAlign: "center",
+          display: "flex",
           justifyContent: "center",
-          fontSize: "40px",
+          alignItems: "center",
         }}
       >
-        GitHub User History
-      </Typography>
+        <Typography
+          variant="h4"
+          style={{
+            margin: "20px",
+            fontWeight: "bold",
+            color: "white",
+            textAlign: "center",
+            justifyContent: "center",
+            fontSize: "45px",
+            fontFamily: "Alef"
+          }}
+        >
+          GitHub User History
+        </Typography>
+        <img
+          className="header"
+          src={process.env.PUBLIC_URL + "/github_search.png"}
+          alt="GitHub Icon"
+          style={{
+            width: "80px",
+          }}
+        />
+      </div>
       <Input />
       <img
-        src={process.env.PUBLIC_URL + "/github_icon.png"}
+        src={process.env.PUBLIC_URL + "/github_logo.png"}
         alt="GitHub Icon"
         style={{
-          width: "50px",
-          position: "absolute",
-          right: "0px",
-          bottom: "0px",
+          width: "120px",
+          right: "5px",
+          bottom: "5px",
+          position: "fixed",
         }}
       />
     </div>
