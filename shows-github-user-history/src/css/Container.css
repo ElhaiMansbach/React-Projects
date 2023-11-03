@@ -2,14 +2,20 @@
   0% {
     transform: translate(0, 0) scale(1);
   }
-  80% {
-    transform: translate(0,400%) scale(2);
+  15% {
+    transform: translate(120px, 0) scale(1);
+  }
+  40% {
+    transform: translate(120px, 350px) scale(1.5);
+  }
+  60% {
+    transform: translate(0, 350px) scale(2);
   }
   100% {
-    transform: translate(0,0) scale(1);
+    transform: translate(0, 0) scale(1);
   }
 }
 
 .image-animation:hover {
-  animation: moveAndScale 7s ease-in-out infinite;
+  animation: moveAndScale 8s ease-in-out infinite;
 }
