@@ -5,6 +5,7 @@ async function getUserInfo(userName) {
     return userData;
   } catch (error) {
     console.log(error);
+    return "Not Found";
   }
 }
 export default getUserInfo;

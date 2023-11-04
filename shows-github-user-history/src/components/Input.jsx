@@ -24,7 +24,7 @@ function Input() {
     try {
       setShowLoading(false);
       const userData = await getUserInfo(username);
-      if (userData.message === "Not Found") {
+      if (userData.message === "Not Found" || userData === "Not Found") {
         setError(`User "${username}" not found 😵 - please try again.`);
       } else {
         setUserInfo(userData);
