@@ -47,6 +47,8 @@ const gifSrc = [
   "https://media1.giphy.com/media/KHEfRIuqUuIyIPA9l1/200w.webp?cid=ecf05e47q2e5qmc1vh5owo2eygy7ap5rit7rb9xyn8b00xfw&ep=v1_gifs_search&rid=200w.webp&ct=g",
   "https://media0.giphy.com/media/5T0jGrVN3Ln50v4G0D/200w.webp?cid=ecf05e47q2e5qmc1vh5owo2eygy7ap5rit7rb9xyn8b00xfw&ep=v1_gifs_search&rid=200w.webp&ct=g",
   "https://media2.giphy.com/media/srBgdzE99ThTk9tfTE/200w.webp?cid=ecf05e47q2e5qmc1vh5owo2eygy7ap5rit7rb9xyn8b00xfw&ep=v1_gifs_search&rid=200w.webp&ct=g",
+  "https://media3.giphy.com/media/wmYxMCf6vOH3UFAt56/giphy360p.mp4?cid=ecf05e475mbnahccje8s1scbutqx1sagav2ryzsx46lx9rev&ep=v1_videos_search&rid=giphy360p.mp4&ct=v",
+  "https://media3.giphy.com/media/Atc9QCyWLGHgLZhHDp/200w.webp?cid=ecf05e47xg434k1q8evvu99h8jv9e8xq6xqndeujalaxazzk&ep=v1_gifs_search&rid=200w.webp&ct=g",
 ];
 
 export default gifSrc;

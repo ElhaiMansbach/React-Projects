@@ -7,7 +7,7 @@ async function getUserRepos(userName) {
     return userRepos;
   } catch (error) {
     console.log(error);
-    throw error;
+    // throw error;
   }
 }
 export default getUserRepos;
