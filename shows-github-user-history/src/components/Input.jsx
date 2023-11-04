@@ -24,8 +24,10 @@ function Input() {
     try {
       setShowLoading(false);
       const userData = await getUserInfo(username);
-      if (userData.message === "Not Found" || userData.message[0] === "A") {
+      if (userData.message === "Not Found") {
         setError(`User "${username}" not found 😵 - please try again.`);
+      } else if (userData.message[0] === "A") {
+        setError("API rate limit exceeded, please come back later 🕐.");
       } else {
         setUserInfo(userData);
         const repos = await getUserRepos(username);
