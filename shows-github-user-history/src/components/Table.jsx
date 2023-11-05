@@ -34,16 +34,7 @@ function Table(props) {
   }, []);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        textAlign: "center",
-        justifyContent: "center",
-        alignItems: "center",
-        marginTop: "50px",
-        marginBottom: "50px",
-      }}
-    >
+    <div className="table-container">
       <table>
         <thead>
           <tr>
@@ -78,45 +69,3 @@ function Table(props) {
 }
 
 export default Table;
-
-// import React, {useState} from "react";
-// import Row from "./Row";
-// import SortUp from "./SortUp";
-// import SortDown from "./SortDown";
-// import "../css/Table.css";
-
-// function Table(props) {
-//   const sortedRepos = [...props.userRepos].sort((repo1, repo2) => {
-//     const date1 = new Date(repo1.created_at);
-//     const date2 = new Date(repo2.created_at);
-//     return date2 - date1;
-//   });
-//   return (
-//     <div
-//       style={{
-//         display: "flex",
-//         textAlign: "center",
-//         justifyContent: "center",
-//         alignItems: "center",
-//         marginTop: "50px",
-//         marginBottom: "50px",
-//       }}
-//     >
-//       <table>
-//         <thead>
-//           <tr>
-//             <th > </th>
-//             <th className="centered-header"><SortUp /> Name <SortDown /></th>
-//             <th className="centered-header"><SortUp /> Date <SortDown /></th>
-//             <th>Link</th>
-//           </tr>
-//         </thead>
-//         {sortedRepos.map((repo, index) => {
-//           return <Row key={index} index={index} repo={repo} />;
-//         })}
-//       </table>
-//     </div>
-//   );
-// }
-
-// export default Table;

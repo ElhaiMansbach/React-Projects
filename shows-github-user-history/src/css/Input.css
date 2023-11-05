@@ -1,9 +1,49 @@
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form > .input {
+  width: 250px;
+  margin-right: 20px;
+}
+
+form > .button-submit {
+  background-color:rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: Alef;
+}
+
+form > .button-submit:hover {
+  background-color:rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: Alef;
+}
+
+.container-error-gif{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.container-error-gif > .error {
+  font-size: 22px;
+  text-align: center;
+  font-family: Alef;
+}
+
 .rotate-vertical {
-    transition: transform 4s;
-    border: 3px solid #ffffff;
-  }
-  
-  .rotate-vertical:hover {
-    transform: rotateX(360deg);
-  }
-  
+  width: 270px;
+  height: 250px;
+  margin-top: 50px;
+  border-radius: 50%;
+  transition: transform 4s;
+  border: 3px solid #ffffff;
+}
+
+.rotate-vertical:hover {
+  transform: rotateX(360deg);
+}
