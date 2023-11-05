@@ -26,7 +26,10 @@ function Input() {
       const userData = await getUserInfo(username);
       if (userData.message === "Not Found") {
         setError(`User "${username}" not found 😵 - please try again.`);
-      } else if (userData.message[0] === "A") {
+      } else if (
+        userData.message &&
+        userData.message.slice(0, 23) === "API rate limit exceeded"
+      ) {
         setError("API rate limit exceeded, please come back later 🕐.");
       } else {
         setUserInfo(userData);
@@ -51,31 +54,15 @@ function Input() {
 
   return (
     <>
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <form onSubmit={handleSubmit}>
         <TextField
-          id="outlined-basic"
+          className="input"
           label="Enter GitHub username"
           variant="outlined"
-          style={{ width: "300px", marginRight: "20px" }}
           error={Boolean(error)}
         />
 
-        <Button
-          type="submit"
-          variant="contained"
-          style={{
-            backgroundColor: "#000000",
-            color: "#ffffff",
-            fontFamily: "Alef",
-          }}
-        >
+        <Button className="button-submit" type="submit" variant="contained">
           Search
         </Button>
       </form>
@@ -90,38 +77,12 @@ function Input() {
       {userRepos && !error && !showLoading && <Progress />}
 
       {error && (
-        <div
-          style={{
-            marginTop: "40px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <Typography
-            variant="body2"
-            color="error"
-            style={{
-              fontSize: "22px",
-              textAlign: "center",
-              fontFamily: "Alef",
-            }}
-          >
+        <div className="container-error-gif">
+          <Typography className="error" variant="body2" color="error">
             {error}
           </Typography>
 
-          <img
-            className="rotate-vertical"
-            src={src}
-            alt="GIF"
-            style={{
-              width: "270px",
-              height: "250px",
-              marginTop: "50px",
-              borderRadius: "50%",
-            }}
-          />
+          <img className="rotate-vertical" src={src} alt="GIF" />
         </div>
       )}
     </>
