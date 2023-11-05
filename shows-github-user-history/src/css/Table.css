@@ -1,58 +1,102 @@
-.table-container{
+.table-container {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 table {
-    border-collapse: collapse;
-    width: 75%;
-    height: 100px;
-    font-size: 17.5px;
-  }
+  border-collapse: collapse;
+  width: 75%;
+  font-size: 17.5px;
+}
 
-  th, td {
-    border: 2px solid #ffffff;
-    padding: 8px;
-  }
+th,
+td {
+  border: 2px solid #ffffff;
+  padding: 6px;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-size: 22px;
+}
+
+tbody:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+th > button {
+  border: none;
+  background-color: rgba(97, 255, 244, 0.5);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+th > button:hover,
+th > button:focus {
+  color: white;
+  background-color: rgba(97, 255, 244, 1);
+}
+
+th > button:focus {
+  outline: 1.5px solid rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------Media query for medium screens ------------------ */
+@media (max-width: 868px) {
+  /* .table-container {
+    max-height: 100%; 
+    max-width: 100%; 
+    overflow: auto; 
+  } */
 
   th {
-    background-color: #f2f2f2;
-    font-size: 22px;
+    font-size: 15px;
+  }
+  .date-header{
+    min-width: 50px;
+  }
+  td {
+    padding: 3px;
+    font-size: 13px;
   }
 
-  tbody:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.2);
+  th > button {
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    padding: 0px 2px 2px 2px;
   }
+}
 
+/* ---------------Media query for small screens ------------------ */
+@media (max-width: 520px) {
 
-  th>button {
-    border: none;
-    background-color: rgba(97, 255, 244, 0.5);
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    color: rgba(255, 255, 255, 0.6);
-    margin-left: 5px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    /* transition: background-color 0.2s;  */
+  th {
+    font-size: 14px;
   }
-  
-  
-  th>button:hover,
-  th>button:focus {
-    color: white;
-    background-color: rgba(97, 255, 244, 1);}
-  
-    th>button:focus {
-    outline: 1.5px solid rgba(0, 0, 0, 0.5);
+  .date-header{
+    min-width: 50px;
   }
+  td {
+    padding: 2px;
+    font-size: 10px;
+    }
 
-
-
+  th > button {
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    padding: 0px 2px 2px 2px;
+  }
+}
