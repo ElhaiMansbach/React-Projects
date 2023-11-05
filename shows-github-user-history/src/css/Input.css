@@ -10,18 +10,18 @@ form > .input {
 }
 
 form > .button-submit {
-  background-color:rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
   font-family: Alef;
 }
 
 form > .button-submit:hover {
-  background-color:rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
   font-family: Alef;
 }
 
-.container-error-gif{
+.container-error-gif {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,3 +47,26 @@ form > .button-submit:hover {
 .rotate-vertical:hover {
   transform: rotateX(360deg);
 }
+
+/* ---------------Media query for medium screens ------------------ */
+@media (max-width: 868px) {
+  form > .input {
+    width: 220px;
+    margin-right: 20px;
+  }
+
+  form > .button-submit {
+    width: 50px;
+    font-size: 11px;
+  }
+  
+  .container-error-gif > .error {
+    font-size: 20px;
+  }
+  
+  .rotate-vertical {
+    width: 230px;
+    height: 210px;
+  }
+}
+

@@ -48,7 +48,7 @@ function Table(props) {
                 {sortType === "nameUp" ? "⇩" : "⇧"}
               </button>
             </th>
-            <th>
+            <th className="date-header">
               Date
               <button
                 onClick={() => sortByDate(sortType !== "dateUp")}
