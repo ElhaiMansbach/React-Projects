@@ -84,20 +84,23 @@ a{
 @media (max-width: 570px) {
 
   th {
-    font-size: 14px;
+    font-size: 11px;
   }
   .date-header{
     min-width: 50px;
   }
   td {
     padding: 2px;
-    font-size: 10px;
+    font-size: 7px;
     }
 
   th > button {
-    width: 15px;
-    height: 15px;
-    font-size: 12px;
+    width: 17px;
+    height: 17px;
+    font-size: 15px;
     padding: 0px 2px 2px 2px;
+    align-items: center;
+    align-content: center;
+    /* padding: 0px 2px 2px 2px; */
   }
 }

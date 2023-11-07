@@ -44,13 +44,13 @@ div > .title {
 /* ---------------Media query for small screens ------------------ */
 @media (max-width: 570px) {
   div > .title {
-    font-size: 35px;
-    margin-top: 40px;
+    font-size: 38px;
+    margin-top: 30px;
     margin-bottom: 30px;
   }
 
   .img-left-logo {
-    width: 10%;
+    display: none;
   }
 
   .img-right-logo {
