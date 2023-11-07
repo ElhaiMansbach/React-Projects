@@ -57,7 +57,7 @@ function Input() {
       <form onSubmit={handleSubmit}>
         <TextField
           className="input"
-          label="Enter GitHub username"
+          label="Enter GitHub user name . . 🖊️"
           variant="outlined"
           error={Boolean(error)}
         />

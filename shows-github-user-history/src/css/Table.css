@@ -3,14 +3,14 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 table {
   border-collapse: collapse;
-  width: 75%;
-  font-size: 17.5px;
+  width: 85%;
+  font-size: 17px;
 }
 
 th,
@@ -21,7 +21,7 @@ td {
 
 th {
   background-color: #f2f2f2;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 tbody:nth-child(even) {
@@ -36,6 +36,7 @@ th > button {
   height: 25px;
   color: rgba(255, 255, 255, 0.6);
   margin-left: 5px;
+  position: relative;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -52,23 +53,23 @@ th > button:focus {
   outline: 1.5px solid rgba(0, 0, 0, 0.5);
 }
 
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
 /* ---------------Media query for medium screens ------------------ */
-@media (max-width: 868px) {
-  /* .table-container {
-    max-height: 100%; 
-    max-width: 100%; 
-    overflow: auto; 
-  } */
+@media (max-width: 895px) {
 
   th {
-    font-size: 15px;
+    font-size: 16px;
   }
-  .date-header{
+  /* .date-header{
     min-width: 50px;
-  }
+  } */
   td {
     padding: 3px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   th > button {
@@ -80,7 +81,7 @@ th > button:focus {
 }
 
 /* ---------------Media query for small screens ------------------ */
-@media (max-width: 520px) {
+@media (max-width: 570px) {
 
   th {
     font-size: 14px;
