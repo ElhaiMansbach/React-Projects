@@ -27,7 +27,7 @@
   transform: rotate(360deg);
 }
 /* ---------------Media query for medium screens ------------------ */
-@media (max-width: 868px) {
+@media (max-width: 895px) {
 
   .info-container > .hello {
     font-size: 23px;

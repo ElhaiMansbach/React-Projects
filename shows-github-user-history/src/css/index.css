@@ -11,3 +11,13 @@ body {
     rgba(104, 172, 255, 0.8) 100%
   );
 }
+
+/* ---------------Media query for small screens ------------------ */
+@media (max-width: 570px) {
+  body {
+    height: 100vh;
+    overflow: none;
+    background-attachment: fixed;
+  }
+  
+}

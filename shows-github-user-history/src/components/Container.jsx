@@ -5,20 +5,13 @@ import "../css/Container.css";
 
 function Container() {
   return (
-    <div>
+    <div className="page-container">
       <img
         className="img-left-logo"
         src={process.env.PUBLIC_URL + "/git.png"}
         alt="GitHub cat"
       />
-      <div className="container-title">
-        <Typography className="title">GitHub User History</Typography>
-        <img
-          className="image-title"
-          src={process.env.PUBLIC_URL + "/github_search.png"}
-          alt="GitHub Icon"
-        />
-      </div>
+      <Typography className="title">GitHub User History</Typography>
       <Input />
       <img
         className="img-right-logo"
