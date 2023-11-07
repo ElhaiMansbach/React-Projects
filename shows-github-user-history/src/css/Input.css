@@ -65,7 +65,7 @@ form > .button-submit:hover {
   }
 }
 /* ---------------Media query for small screens ------------------ */
-@media (max-width: 895px) {
+@media (max-width: 570px) {
   form > .input {
     margin-right: 15px;
     width: 238px;
@@ -78,6 +78,8 @@ form > .button-submit:hover {
   .container-error-gif > .error {
     font-size: 18px;
     margin-top: 40px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
 
   .rotate-vertical {

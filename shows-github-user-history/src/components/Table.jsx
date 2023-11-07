@@ -39,7 +39,7 @@ function Table(props) {
         <thead>
           <tr>
             <th> </th>
-            <th>
+            <th className="name-header">
               Name
               <button
                 onClick={() => sortByName(sortType !== "nameUp")}

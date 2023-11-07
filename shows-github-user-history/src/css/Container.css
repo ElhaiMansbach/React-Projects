@@ -44,7 +44,7 @@ div > .title {
 /* ---------------Media query for small screens ------------------ */
 @media (max-width: 570px) {
   div > .title {
-    font-size: 38px;
+    font-size: 35px;
     margin-top: 30px;
     margin-bottom: 30px;
   }

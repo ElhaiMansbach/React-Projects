@@ -28,20 +28,27 @@
 }
 /* ---------------Media query for medium screens ------------------ */
 @media (max-width: 895px) {
-
   .info-container > .hello {
     font-size: 23px;
   }
   .info-container > .repos-number {
     font-size: 15px;
   }
-  
+
   .rotate {
     width: 80px;
   }
-  
+
   .rotate:hover {
     transform: rotate(360deg);
+  }
+}
+
+/* ---------------Media query for medium screens ------------------ */
+@media (max-width: 570px) {
+  .info-container {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
