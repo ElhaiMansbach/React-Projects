@@ -67,7 +67,7 @@ form > .button-submit:hover {
 /* ---------------Media query for small screens ------------------ */
 @media (max-width: 895px) {
   form > .input {
-    margin-right: 10px;
+    margin-right: 15px;
     width: 238px;
   }
 
