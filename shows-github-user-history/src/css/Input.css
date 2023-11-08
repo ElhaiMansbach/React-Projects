@@ -82,8 +82,8 @@ form > .button-submit:hover {
   .container-error-gif > .error {
     font-size: 18px;
     /* margin-top: 10px; */
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    /* margin-left: 2.5%;
+    margin-right: 2.5%; */
   }
 
   .rotate-vertical {
