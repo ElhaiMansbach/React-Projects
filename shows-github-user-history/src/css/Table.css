@@ -22,6 +22,10 @@ td {
 th {
   background-color: #f2f2f2;
   font-size: 20px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 tbody:nth-child(even) {
@@ -53,14 +57,13 @@ th > button:focus {
   outline: 1.5px solid rgba(0, 0, 0, 0.5);
 }
 
-a{
+a {
   text-decoration: none;
   color: #000000;
 }
 
 /* ---------------Media query for medium screens ------------------ */
 @media (max-width: 895px) {
-
   th {
     font-size: 16px;
   }
@@ -82,24 +85,34 @@ a{
 
 /* ---------------Media query for small screens ------------------ */
 @media (max-width: 570px) {
-
   th {
     font-size: 12px;
   }
-  .name-header, .date-header{
+  .name-header {
+    min-width: 55px;
+  }
+
+  .date-header {
     min-width: 50px;
   }
   td {
-    padding: 2px;
+    /* padding: 2px; */
     font-size: 8px;
-    }
+  }
 
   th > button {
+    width: 18px; /* Increase the button width for better alignment */
+    height: 18px;
+    font-size: 14px; /* Adjust font size for better visibility */
+    padding: 0; /* Remove padding to ensure equal spacing */
+  }
+
+  /* th > button {
     width: 14px;
     height: 14px;
     font-size: 12px;
-    padding: 0px 2px 2px 2px;
     align-items: center;
-    align-content: center;
-  }
+    justify-content: center;   
+    padding-bottom: 3px;
+  } */
 }

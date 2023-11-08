@@ -3,7 +3,7 @@
 }
 
 /* ---------------Media query for small screens ------------------ */
-@media (max-width: 570px) {
+/* @media (max-width: 570px) {
     .img-cat{
         display: flex;
         position: fixed;
@@ -12,4 +12,4 @@
         width: 11%;
         z-index: -1;
     }
-}
+} */

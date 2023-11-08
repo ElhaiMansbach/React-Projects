@@ -14,6 +14,7 @@
 .info-container > .repos-number {
   font-family: Alef;
   font-size: 22px;
+  text-align: center;
 }
 
 .rotate {
