@@ -67,9 +67,7 @@ a {
   th {
     font-size: 16px;
   }
-  /* .date-header{
-    min-width: 50px;
-  } */
+
   td {
     padding: 3px;
     font-size: 14px;
@@ -88,6 +86,7 @@ a {
   th {
     font-size: 12px;
   }
+
   .name-header {
     min-width: 55px;
   }
@@ -95,24 +94,15 @@ a {
   .date-header {
     min-width: 50px;
   }
+
   td {
-    /* padding: 2px; */
     font-size: 8px;
   }
 
   th > button {
-    width: 18px; /* Increase the button width for better alignment */
+    width: 18px;
     height: 18px;
-    font-size: 14px; /* Adjust font size for better visibility */
-    padding: 0; /* Remove padding to ensure equal spacing */
+    font-size: 14px;
+    padding: 0;
   }
-
-  /* th > button {
-    width: 14px;
-    height: 14px;
-    font-size: 12px;
-    align-items: center;
-    justify-content: center;   
-    padding-bottom: 3px;
-  } */
 }
