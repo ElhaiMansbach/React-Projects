@@ -9,15 +9,31 @@
 
 table {
   border-collapse: collapse;
-  width: 85%;
+  width: 75%;
   font-size: 17px;
-  /* table-layout: fixed; */
+  table-layout: fixed;
+  overflow-wrap: break-word;
+}
+
+.nums-header {
+  width: 7%;
+}
+
+.name-header {
+  width: 28%;
+}
+
+.date-header {
+  width: 18%;
 }
 
 th,
 td {
   border: 2px solid #ffffff;
-  padding: 6px;
+  padding: 5px 0px;
+}
+td {
+  padding: 4px 4px;
 }
 
 th {
@@ -97,7 +113,7 @@ a {
     padding: 3px 0;
   }
 
-  .nums-header{
+  .nums-header {
     width: 7%;
   }
 
@@ -107,11 +123,7 @@ a {
 
   .date-header {
     width: 18%;
-    }
-
-  /* .link-header{
-    max-width: 50px;
-  } */
+  }
 
   td {
     font-size: 8px;
