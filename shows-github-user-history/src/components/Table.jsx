@@ -38,7 +38,7 @@ function Table(props) {
       <table>
         <thead>
           <tr>
-            <th> </th>
+            <th className="nums-header"> </th>
             <th className="name-header">
               Name
               <button
@@ -57,7 +57,7 @@ function Table(props) {
                 {sortType === "dateUp" ? "⇩" : "⇧"}
               </button>
             </th>
-            <th>Link</th>
+            <th className="link-header">Link</th>
           </tr>
         </thead>
         {repos.map((repo, index) => {
