@@ -21,12 +21,12 @@ Here's a list of the projects included in this repository:
    - Technologies Used: JavaScript, React, CSS.
    - Link to Project: [View Project](https://github.com/ElhaiMansbach/React-Projects/tree/main/Tenzies%20game)
   
-4. **Project 4: UserManager**
+4. **Project 4: User manager**
    - Description: This project is a simple user management app. 
    - Technologies Used: JavaScript, React, CSS.
    - Link to Project: [View Project](https://github.com/ElhaiMansbach/React-Projects/tree/main/UserManager)
    - 
-5. **Project 5: shows-github-user-history**
+5. **Project 5: Shows github user history**
    - Description: This project presents data about users on GitHub.
    - Technologies Used: JavaScript, React, Material UI, CSS.
    - Link to Project: [View Project](https://github.com/ElhaiMansbach/React-Projects/tree/main/shows-github-user-history)
