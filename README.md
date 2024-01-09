@@ -25,11 +25,16 @@ Here's a list of the projects included in this repository:
    - Description: This project is a simple user management app. 
    - Technologies Used: JavaScript, React, CSS.
    - Link to Project: [View Project](https://github.com/ElhaiMansbach/React-Projects/tree/main/UserManager)
-   - 
+     
 5. **Project 5: Shows github user history**
    - Description: This project presents data about users on GitHub.
    - Technologies Used: JavaScript, React, Material UI, CSS.
    - Link to Project: [View Project](https://github.com/ElhaiMansbach/React-Projects/tree/main/shows-github-user-history)
+     
+6. **Project 6: Tic-Tac-Toe**
+   - Description: This project allows two players to engage in a classic game of Tic-Tac-Toe.
+   - Technologies Used: JavaScript, React, CSS.
+   - Link to Project: [View Project](https://github.com/ElhaiMansbach/React-Projects/tree/main/Tic-Tac-Toe)
 
 Thank you for visiting my web development projects repository! Enjoy exploring the projects.
 
