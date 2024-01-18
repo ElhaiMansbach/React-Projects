@@ -1,6 +1,6 @@
 <h1 align=center>Tic-Tac-Toe</h1>
 
-**[Tic-Tac-Toe Game](https://github.com/ElhaiMansbach/React-Projects)**
+**[Tic-Tac-Toe Game](https://tic-tac-toe-just-win.netlify.app/)**
 
 Tic-Tac-Toe is a simple React-based web application that allows two players to engage in a classic game of Tic-Tac-Toe. <br/>
 The game features a dynamic game board, a log to track moves, and a game-over screen displaying the winner or a draw.
