@@ -21,6 +21,7 @@ function App() {
             id: Math.random().toString(),
             text: text,
             projectId: prevState.selectedProjectId,
+            isDone: false,
           },
         ],
       };
@@ -32,6 +33,23 @@ function App() {
       return {
         ...prevState,
         tasks: prevState.tasks.filter((task) => task.id !== id),
+      };
+    });
+  }
+
+  function isDoneTask(id) {
+    setProjectsState((prevState) => {
+      return {
+        ...prevState,
+        tasks: prevState.tasks.map((task) => {
+          if (task.id === id) {
+            return {
+              ...task,
+              isDone: task.isDone ? false : true,
+            };
+          }
+          return task;
+        }),
       };
     });
   }
@@ -94,6 +112,7 @@ function App() {
       onAddTask={handleAddTask}
       onDeleteTask={handleDeleteTask}
       tasks={projectsState.tasks}
+      isDoneTask={isDoneTask}
     />
   );
   if (projectsState.selectedProjectId === null)

@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import Input from "./Input";
-import NoProjectSelected from "./NoProjectSelected";
 import Modal from "./Modal";
 
 export default function NewProject({ handleAddProject, onCancel }) {
@@ -42,7 +41,7 @@ export default function NewProject({ handleAddProject, onCancel }) {
           Please make sure you provide a valid value for every input field.
         </p>
       </Modal>
-      <div className="w-[35rem] mt-16">
+      <div className="w-[45rem] mt-16 mx-auto">
         <menu className="flex item-center justify-end gap-4 my-4">
           <li>
             <button
