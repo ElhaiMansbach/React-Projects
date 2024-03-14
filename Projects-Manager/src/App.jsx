@@ -123,7 +123,7 @@ function App() {
     content = <NoProjectSelected startAddProject={startAddProject} />;
 
   return (
-    <main className="h-screen my-8 flex gap-8">
+    <main className="h-[calc(100vh-4rem)] my-8 flex gap-8 " >
       <ProjectsSidebar
         startAddProject={startAddProject}
         projects={projectsState.projects}
