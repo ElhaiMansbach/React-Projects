@@ -1,10 +1,17 @@
+import { useState } from "react";
 import noProjectImage from "../assets/no-projects.png";
 import Button from "./Button";
+import { motion } from "framer-motion";
 
 export default function NoProjectSelected({ startAddProject }) {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="mt-24 text-center w-2/3 mx-auto">
-      <img
+      <motion.img
+        onHoverStart={() => setIsHovered(true)}
+        onHoverEnd={() => setIsHovered(false)}
+        animate={{ scale: isHovered ? 1.5 : 1 }}
+        transition={{ duration: 0.8 }}
         src={noProjectImage}
         alt="empty task list"
         className="w-16 h-16 object-contain mx-auto"
