@@ -3,6 +3,7 @@ import NoProjectSelected from "./components/NoProjectSelected";
 import NewProject from "./components/NewProject";
 import ProjectsSidebar from "./components/ProjectsSidebar";
 import SelectedProject from "./components/SelectedProject";
+import ProjectsContext from "./context/ProjectsContext";
 
 function App() {
   const [projectsState, setProjectsState] = useState({
@@ -111,7 +112,6 @@ function App() {
       onDeleteProject={handleDeleteProject}
       onAddTask={handleAddTask}
       onDeleteTask={handleDeleteTask}
-      tasks={projectsState.tasks}
       isDoneTask={isDoneTask}
     />
   );
@@ -123,15 +123,16 @@ function App() {
     content = <NoProjectSelected startAddProject={startAddProject} />;
 
   return (
-    <main className="h-[calc(100vh-4rem)] my-8 flex gap-8 " >
-      <ProjectsSidebar
-        startAddProject={startAddProject}
-        projects={projectsState.projects}
-        onSelectProject={handleSelectProject}
-        selectedProjectId={projectsState.selectedProjectId}
-      />
-      {content}
-    </main>
+    <ProjectsContext.Provider value={projectsState}>
+      <main className="h-[calc(100vh-4rem)] my-8 flex gap-8 ">
+        <ProjectsSidebar
+          startAddProject={startAddProject}
+          onSelectProject={handleSelectProject}
+          selectedProjectId={projectsState.selectedProjectId}
+        />
+        {content}
+      </main>
+    </ProjectsContext.Provider>
   );
 }
 

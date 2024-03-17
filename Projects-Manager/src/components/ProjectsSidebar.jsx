@@ -1,11 +1,14 @@
+import { useContext } from "react";
+import ProjectsContext from "../context/ProjectsContext";
 import Button from "./Button";
 
 export default function ProjectsSidebar({
   startAddProject,
-  projects,
   onSelectProject,
   selectedProjectId,
 }) {
+  const projects = useContext(ProjectsContext).projects;
+
   return (
     <aside className="w-1/3 px-8 py-16 bg-stone-900 text-stone-50 md:w-72 rounded-r-xl">
       <h2 className="mb-8 font-bold uppercase md:text-xl text-stone-200">
@@ -27,8 +30,8 @@ export default function ProjectsSidebar({
             cssClasses += " text-stone-400";
           }
           return (
-            <li key={project.id} >
-              <button 
+            <li key={project.id}>
+              <button
                 onClick={() => onSelectProject(project.id)}
                 className={cssClasses}
               >
