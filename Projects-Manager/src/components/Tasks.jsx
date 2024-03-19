@@ -2,7 +2,7 @@ import NewTask from "./NewTask";
 
 export default function Tasks({ tasks, onAdd, onDelete, isDoneTask }) {
   return (
-    <section >
+    <section>
       <h2 className="text-2xl font-bold text-stone-700 my-4">Tasks</h2>
       <NewTask onAdd={onAdd} />
       {tasks.length === 0 ? (
@@ -12,12 +12,12 @@ export default function Tasks({ tasks, onAdd, onDelete, isDoneTask }) {
       ) : (
         <ul className="p-4 mt-8 rounded-md max-h-[35vh] overflow-y-auto">
           {tasks.map((task) => {
-            let cssList = `flex justify-between my-2 p-4 rounded-lg bg-stone-100${
-              task.isDone ? "line-through" : ""
-            }`;
+            let cssList =
+              "flex justify-between my-2 p-4 rounded-lg bg-stone-100";
+            let cssSpan = `${task.isDone ? "line-through" : ""}`;
             return (
               <li key={task.id} className={cssList}>
-                <span>{task.text}</span>
+                <span className={cssSpan}>{task.text}</span>
                 <div>
                   <button
                     onClick={() => isDoneTask(task.id)}
