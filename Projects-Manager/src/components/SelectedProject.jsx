@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import Tasks from "./Tasks";
 import ProjectsContext from "../context/ProjectsContext";
+import imageManTask from "../assets/man-tasks.png";
 
 export default function SelectedProject({
   project,
@@ -35,6 +36,13 @@ export default function SelectedProject({
           {project.description}
         </p>
       </header>
+
+      <img
+        src={imageManTask}
+        alt="imageManTask"
+        className="w-80 h-32 object-contain absolute mx-96"
+      />
+
       <Tasks
         onAdd={onAddTask}
         onDelete={onDeleteTask}
