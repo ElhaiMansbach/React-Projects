@@ -2,11 +2,12 @@ import { useState } from "react";
 import noProjectImage from "../assets/no-projects.png";
 import Button from "./Button";
 import { motion } from "framer-motion";
+import imageList from "../assets/blue-cap-checklist.png";
 
 export default function NoProjectSelected({ startAddProject }) {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="mt-24 text-center w-2/3 mx-auto">
+    <div className="mt-24 text-center w-5/6 mx-auto">
       <motion.img
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
@@ -25,6 +26,11 @@ export default function NoProjectSelected({ startAddProject }) {
       <p className="mt-8">
         <Button onClick={startAddProject}>Create new project</Button>
       </p>
+      <img
+        src={imageList}
+        alt="imageList"
+        className="w-52 h-52 object-contain mx-auto mt-8"
+      />
     </div>
   );
 }

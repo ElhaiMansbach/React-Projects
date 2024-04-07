@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import Input from "./Input";
 import Modal from "./Modal";
+import manLogoProject from "../assets/man-with-blank-sign.png"
 
 export default function NewProject({ handleAddProject, onCancel }) {
   const modal = useRef();
@@ -65,6 +66,11 @@ export default function NewProject({ handleAddProject, onCancel }) {
           <Input label="Description" textarea ref={description} />
           <Input label="Due Date" ref={dueDate} type="date" />
         </div>
+        <img
+          src={manLogoProject}
+          alt="manLogoProject"
+          className="w-52 h-52 object-contain mx-auto mt-8 "
+        />
       </div>
     </>
   );
