@@ -1,6 +1,7 @@
 <h1 align="center">Web Development Projects</h1>
 
-Welcome to my portfolio of web development projects. This repository contains a collection of projects built with various web technologies, including JavaScript, React, HTML, and CSS.
+Welcome to my portfolio of web development projects.<br/>
+This repository contains a collection of projects built with various web technologies, including JavaScript, React, HTML, and CSS.
 
 ## Project List
 
