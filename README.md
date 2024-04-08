@@ -31,10 +31,15 @@ Here's a list of the projects included in this repository:
    - Technologies Used: JavaScript, React, Material UI, CSS.
    - Link to Project: [View Project](https://github.com/ElhaiMansbach/React-Projects/tree/main/shows-github-user-history)
      
-6. **Project 6: Tic-Tac-Toe**
+6. **Project 6: Tic Tac Toe**
    - Description: This project allows two players to engage in a classic game of Tic-Tac-Toe.
    - Technologies Used: JavaScript, React, CSS.
    - Link to Project: [View Project](https://github.com/ElhaiMansbach/React-Projects/tree/main/Tic-Tac-Toe)
+
+6. **Project 7: Projects Manager**
+   - Description: Projects Manager is a web application for managing projects and tasks.
+   - Technologies Used: JavaScript, React, CSS, Framer Motion.
+   - Link to Project: [View Project](https://github.com/ElhaiMansbach/React-Projects/tree/main/Projects-Manager)
 
 Thank you for visiting my web development projects repository! Enjoy exploring the projects.
 
